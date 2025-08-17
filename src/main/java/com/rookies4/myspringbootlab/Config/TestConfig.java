@@ -1,7 +1,7 @@
-package com.rookies4.MySpringbootLab.Config;
+package com.rookies4.myspringbootlab.Config;
 
 
-import com.rookies4.MySpringbootLab.Config.vo.MyEnvironment;
+import com.rookies4.myspringbootlab.Config.vo.MyEnvironment;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

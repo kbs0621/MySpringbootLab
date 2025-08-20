@@ -907,3 +907,546 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
+2025-08-19T18:08:53.832+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:08:53.845+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:08:53.958+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-19T18:08:53.959+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-19T18:08:55.515+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:08:55.586+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2025-08-19T18:08:56.536+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:08:56.563+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:08:56.565+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:08:56.646+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:08:56.646+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2686 ms
+2025-08-19T18:08:57.117+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:08:57.233+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.Version                              : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T18:08:57.308+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:08:57.781+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:08:57.850+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-08-19T18:08:58.005+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5a4571fc
+2025-08-19T18:08:58.008+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-08-19T18:08:58.067+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:08:58.115+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:08:59.294+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:08:59.359+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:08:59.935+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:09:00.395+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:09:00.771+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:09:00.832+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:09:00.843+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:09:00.960+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:09:00.985+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 8.026 seconds (process running for 9.166)
+2025-08-19T18:09:01.003+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:09:01.004+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 34
+2025-08-19T18:09:13.866+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T18:09:13.868+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-19T18:09:13.874+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-08-19T18:09:29.953+09:00 ERROR 16672 --- [MySpringbootLab] [http-nio-8085-exec-4] c.r.m.e.a.DefaultExceptionAdvice         : Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+
+2025-08-19T18:09:30.078+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}]
+2025-08-19T18:09:51.788+09:00 ERROR 16672 --- [MySpringbootLab] [http-nio-8085-exec-7] c.r.m.e.a.DefaultExceptionAdvice         : Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+
+2025-08-19T18:09:51.804+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/1': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}]
+2025-08-19T18:09:54.880+09:00 ERROR 16672 --- [MySpringbootLab] [http-nio-8085-exec-9] c.r.m.e.a.DefaultExceptionAdvice         : Ambiguous handler methods mapped for '/api/books/2': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/2': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+
+2025-08-19T18:09:54.900+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/books/2': {public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookByIsbn(java.lang.String), public com.rookies4.myspringbootlab.entity.Book com.rookies4.myspringbootlab.controller.BookRestController.getBookById(java.lang.Long)}]
+2025-08-19T18:13:35.561+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-19T18:13:35.564+09:00  INFO 16672 --- [MySpringbootLab] [Thread-1] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:13:36.024+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:13:36.032+09:00  INFO 16672 --- [MySpringbootLab] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:13:36.032+09:00  INFO 16672 --- [MySpringbootLab] [Thread-1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-08-19T18:13:36.041+09:00  INFO 16672 --- [MySpringbootLab] [Thread-1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-08-19T18:13:36.196+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:13:36.196+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:13:36.723+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:13:36.743+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-08-19T18:13:36.945+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:13:36.946+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:13:36.946+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:13:36.975+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:13:36.975+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 774 ms
+2025-08-19T18:13:37.065+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:13:37.071+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:13:37.087+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:13:37.090+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-08-19T18:13:37.096+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.mariadb.jdbc.Connection@5be463e7
+2025-08-19T18:13:37.096+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-08-19T18:13:37.098+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:13:37.098+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:13:37.179+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:13:37.212+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:13:37.253+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:13:37.333+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:13:37.450+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:13:37.458+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:13:37.466+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:13:37.496+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:13:37.512+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 1.392 seconds (process running for 285.689)
+2025-08-19T18:13:37.513+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:13:37.513+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 76
+2025-08-19T18:13:37.513+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:13:38.874+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-19T18:13:38.878+09:00  INFO 16672 --- [MySpringbootLab] [Thread-5] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:13:39.095+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:13:39.101+09:00  INFO 16672 --- [MySpringbootLab] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:13:39.101+09:00  INFO 16672 --- [MySpringbootLab] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2025-08-19T18:13:39.101+09:00  INFO 16672 --- [MySpringbootLab] [Thread-5] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2025-08-19T18:13:39.251+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:13:39.251+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:13:39.623+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:13:39.636+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-08-19T18:13:39.729+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:13:39.730+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:13:39.731+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:13:39.749+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:13:39.751+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 500 ms
+2025-08-19T18:13:39.828+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:13:39.831+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:13:39.844+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:13:39.844+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2025-08-19T18:13:39.850+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.mariadb.jdbc.Connection@359f2b06
+2025-08-19T18:13:39.850+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2025-08-19T18:13:39.851+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:13:39.851+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:13:39.904+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:13:39.935+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:13:40.040+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:13:40.135+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:13:40.205+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:13:40.211+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:13:40.220+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:13:40.246+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:13:40.257+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 1.064 seconds (process running for 288.435)
+2025-08-19T18:13:40.260+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:13:40.261+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 4
+2025-08-19T18:13:40.263+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:13:49.151+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T18:13:49.151+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-19T18:13:49.151+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2025-08-19T18:14:38.710+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-19T18:14:38.712+09:00  INFO 16672 --- [MySpringbootLab] [Thread-9] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:14:39.174+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:14:39.178+09:00  INFO 16672 --- [MySpringbootLab] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:14:39.180+09:00  INFO 16672 --- [MySpringbootLab] [Thread-9] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2025-08-19T18:14:39.180+09:00  INFO 16672 --- [MySpringbootLab] [Thread-9] c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2025-08-19T18:14:39.391+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:14:39.391+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:14:39.951+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:14:39.975+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2025-08-19T18:14:40.117+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:14:40.124+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:14:40.124+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:14:40.148+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:14:40.150+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2025-08-19T18:14:40.239+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:14:40.243+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:14:40.261+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:14:40.263+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2025-08-19T18:14:40.269+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.mariadb.jdbc.Connection@61cd1743
+2025-08-19T18:14:40.269+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2025-08-19T18:14:40.269+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:14:40.272+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:14:40.365+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:14:40.402+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:14:40.447+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:14:40.526+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:14:40.691+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:14:40.699+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:14:40.704+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:14:40.733+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:14:40.747+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 1.454 seconds (process running for 348.925)
+2025-08-19T18:14:40.749+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:14:40.749+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 96
+2025-08-19T18:14:40.752+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:14:42.121+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-19T18:14:42.124+09:00  INFO 16672 --- [MySpringbootLab] [Thread-13] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:14:42.391+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:14:42.391+09:00  INFO 16672 --- [MySpringbootLab] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:14:42.391+09:00  INFO 16672 --- [MySpringbootLab] [Thread-13] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown initiated...
+2025-08-19T18:14:42.400+09:00  INFO 16672 --- [MySpringbootLab] [Thread-13] c.z.h.HikariDataSource                   : HikariPool-4 - Shutdown completed.
+2025-08-19T18:14:42.565+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:14:42.565+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:14:43.097+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:14:43.116+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-08-19T18:14:43.271+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:14:43.273+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:14:43.273+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:14:43.318+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:14:43.318+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 749 ms
+2025-08-19T18:14:43.403+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:14:43.410+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:14:43.421+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:14:43.428+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Starting...
+2025-08-19T18:14:43.435+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-5 - Added connection org.mariadb.jdbc.Connection@26533fca
+2025-08-19T18:14:43.435+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-5 - Start completed.
+2025-08-19T18:14:43.437+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:14:43.438+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:14:43.512+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:14:43.546+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:14:43.652+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:14:43.749+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:14:43.844+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:14:43.856+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:14:43.857+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:14:43.882+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:14:43.896+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 1.396 seconds (process running for 352.074)
+2025-08-19T18:14:43.898+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:14:43.898+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 40
+2025-08-19T18:14:43.898+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:15:37.226+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-08-19T18:15:37.229+09:00  INFO 16672 --- [MySpringbootLab] [Thread-17] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:15:37.443+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:15:37.447+09:00  INFO 16672 --- [MySpringbootLab] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:15:37.447+09:00  INFO 16672 --- [MySpringbootLab] [Thread-17] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown initiated...
+2025-08-19T18:15:37.451+09:00  INFO 16672 --- [MySpringbootLab] [Thread-17] c.z.h.HikariDataSource                   : HikariPool-5 - Shutdown completed.
+2025-08-19T18:15:37.588+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:15:37.588+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:15:37.963+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:15:37.982+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2025-08-19T18:15:38.113+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:15:38.114+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:15:38.114+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:15:38.129+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:15:38.130+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 539 ms
+2025-08-19T18:15:38.204+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:15:38.206+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:15:38.215+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:15:38.216+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Starting...
+2025-08-19T18:15:38.221+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-6 - Added connection org.mariadb.jdbc.Connection@517c0d64
+2025-08-19T18:15:38.221+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-6 - Start completed.
+2025-08-19T18:15:38.222+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:15:38.223+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:15:38.279+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:15:38.313+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:15:38.351+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:15:38.408+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:15:38.535+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:15:38.540+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:15:38.542+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:15:38.559+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:15:38.571+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 1.033 seconds (process running for 406.747)
+2025-08-19T18:15:38.573+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:15:38.574+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 38
+2025-08-19T18:15:38.575+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:15:39.986+09:00  INFO 16672 --- [MySpringbootLab] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-08-19T18:15:39.988+09:00  INFO 16672 --- [MySpringbootLab] [Thread-21] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:15:40.191+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:15:40.194+09:00  INFO 16672 --- [MySpringbootLab] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:15:40.196+09:00  INFO 16672 --- [MySpringbootLab] [Thread-21] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown initiated...
+2025-08-19T18:15:40.197+09:00  INFO 16672 --- [MySpringbootLab] [Thread-21] c.z.h.HikariDataSource                   : HikariPool-6 - Shutdown completed.
+2025-08-19T18:15:40.350+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Starting MySpringbootLabApplication using Java 17.0.2 with PID 16672 (C:\mybackend\SpringBoot\MySpringbootLab\target\classes started by user in C:\mybackend\SpringBoot\MySpringbootLab)
+2025-08-19T18:15:40.350+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : The following 1 profile is active: "prod"
+2025-08-19T18:15:40.602+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T18:15:40.620+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-08-19T18:15:40.705+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8085 (http)
+2025-08-19T18:15:40.707+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-08-19T18:15:40.707+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T18:15:40.723+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-08-19T18:15:40.724+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
+2025-08-19T18:15:40.780+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T18:15:40.784+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.c.i.RegionFactoryInitiator           : HHH000026: Second-level cache disabled
+2025-08-19T18:15:40.794+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T18:15:40.794+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Starting...
+2025-08-19T18:15:40.799+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.p.HikariPool                       : HikariPool-7 - Added connection org.mariadb.jdbc.Connection@36863474
+2025-08-19T18:15:40.799+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.z.h.HikariDataSource                   : HikariPool-7 - Start completed.
+2025-08-19T18:15:40.801+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.h.o.deprecation                        : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T18:15:40.802+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.o.c.pooling                          : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 10.11.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T18:15:40.848+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T18:15:40.875+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:15:40.943+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T18:15:40.990+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-19T18:15:41.033+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mariadb://127.0.0.1/lab_db?user=lab&password=***'
+2025-08-19T18:15:41.039+09:00  WARN 16672 --- [MySpringbootLab] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-19T18:15:41.042+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-19T18:15:41.065+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8085 (http) with context path '/'
+2025-08-19T18:15:41.073+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.MySpringbootLabApplication         : Started MySpringbootLabApplication in 0.781 seconds (process running for 409.249)
+2025-08-19T18:15:41.074+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.userName = springboot
+2025-08-19T18:15:41.075+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] c.r.m.r.MyPropRunner                     : Properties myprop.port = 72
+2025-08-19T18:15:41.075+09:00  INFO 16672 --- [MySpringbootLab] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-19T18:15:44.394+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T18:15:44.394+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-08-19T18:15:44.395+09:00  INFO 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-08-19T18:15:44.419+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.rookies4.myspringbootlab.exception.BusinessException: 도서가 존재하지 않습니다.]
+2025-08-19T18:16:01.664+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.rookies4.myspringbootlab.exception.BusinessException: 도서가 존재하지 않습니다.]
+2025-08-19T18:16:06.146+09:00 ERROR 16672 --- [MySpringbootLab] [http-nio-8085-exec-9] c.r.m.e.a.DefaultExceptionAdvice         : Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "isbn"
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "isbn"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:301) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:136) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.43.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.43.jar:10.1.43]
+	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.lang.NumberFormatException: For input string: "isbn"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.base/java.lang.Long.parseLong(Long.java:711) ~[?:?]
+	at java.base/java.lang.Long.valueOf(Long.java:1163) ~[?:?]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:204) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:439) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:412) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:161) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:867) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293) ~[spring-web-6.2.8.jar:6.2.8]
+	... 52 more
+
+2025-08-19T18:16:06.180+09:00  WARN 16672 --- [MySpringbootLab] [http-nio-8085-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "isbn"]
+2025-08-19T18:19:14.586+09:00  INFO 16672 --- [MySpringbootLab] [SpringApplicationShutdownHook] o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T18:19:14.795+09:00  INFO 16672 --- [MySpringbootLab] [tomcat-shutdown] o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-08-19T18:19:14.800+09:00  INFO 16672 --- [MySpringbootLab] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T18:19:14.800+09:00  INFO 16672 --- [MySpringbootLab] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown initiated...
+2025-08-19T18:19:14.802+09:00  INFO 16672 --- [MySpringbootLab] [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-7 - Shutdown completed.

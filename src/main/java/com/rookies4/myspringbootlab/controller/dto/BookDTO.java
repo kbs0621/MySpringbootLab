@@ -1,12 +1,9 @@
-package com.rookies4.myspringbootlab.controller.dto;
+package com.rookies4.myspringbootlab.dto;
 
 import com.rookies4.myspringbootlab.entity.Book;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Positive;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.rookies4.myspringbootlab.entity.BookDetail;
+import jakarta.validation.constraints.*;
+import lombok.*;
 
 import java.time.LocalDate;
 
@@ -14,77 +11,87 @@ public class BookDTO {
 
     @Getter
     @Setter
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class BookCreateRequest {
-        @NotBlank(message = "제목은 필수 입력 항목입니다.")
+    public static class Request {
+        @NotBlank
         private String title;
 
-        @NotBlank(message = "저자는 필수 입력 항목입니다.")
+        @NotBlank
         private String author;
 
-        @NotBlank(message = "ISBN은 필수 입력 항목입니다.")
+        @Pattern(regexp = "^[0-9]{13}$", message = "ISBN은 13자리 숫자여야 합니다.")
         private String isbn;
 
-        @Positive(message = "가격은 양수여야 합니다.")
+        @PositiveOrZero
         private Integer price;
 
-        //@NotBlank(message = "출판일자는 필수 입력 항목입니다.")
+        @PastOrPresent
         private LocalDate publishDate;
 
-        //BookCreateRequest => Entity
-        public Book toEntity() {
-            Book book = new Book();
-            book.setTitle(this.title);
-            book.setAuthor(this.author);
-            book.setIsbn(this.isbn);
-            book.setPrice(this.price);
-            book.setPublishDate(this.publishDate);
-            return book;
-        }
+        private BookDetailDTO detailRequest;
     }
 
     @Getter
     @Setter
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class BookUpdateRequest {
-        @Positive(message = "가격은 양수여야 합니다.")
-        private Integer price;
-
-        // 확장 가능성을 위해 추가 필드들을 옵셔널하게 포함할 수 있음
-        @NotBlank(message = "제목은 필수 입력 항목입니다.")
-        private String title;
-
-        @NotBlank(message = "저자는 필수 입력 항목입니다.")
-        private String author;
-
-        //@NotBlank(message = "출판일자는 필수 입력 항목입니다.")
-        private LocalDate publishDate;
+    public static class BookDetailDTO {
+        private String description;
+        private String language;
+        private Integer pageCount;
+        private String publisher;
+        private String coverImageUrl;
+        private String edition;
     }
 
     @Getter
     @Setter
-    @NoArgsConstructor
     @AllArgsConstructor
-    public static class BookResponse {
+    @NoArgsConstructor
+    @Builder
+    public static class Response {
         private Long id;
         private String title;
         private String author;
         private String isbn;
         private Integer price;
         private LocalDate publishDate;
+        private BookDetailResponse detail;
 
-        //Book => BookResponse
-        public static BookResponse from(Book book) {
-            return new BookResponse(
-                    book.getId(),
-                    book.getTitle(),
-                    book.getAuthor(),
-                    book.getIsbn(),
-                    book.getPrice(),
-                    book.getPublishDate()
-            );
+        public static Response fromEntity(Book book) {
+            return Response.builder()
+                    .id(book.getId())
+                    .title(book.getTitle())
+                    .author(book.getAuthor())
+                    .isbn(book.getIsbn())
+                    .price(book.getPrice())
+                    .publishDate(book.getPublishDate())
+                    .detail(book.getBookDetail() != null ? BookDetailResponse.fromEntity(book.getBookDetail()) : null)
+                    .build();
+        }
+    }
+
+    @Getter
+    @Setter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Builder
+    public static class BookDetailResponse {
+        private Long id;
+        private String description;
+        private String language;
+        private Integer pageCount;
+        private String publisher;
+        private String coverImageUrl;
+        private String edition;
+
+        public static BookDetailResponse fromEntity(BookDetail detail) {
+            return BookDetailResponse.builder()
+                    .id(detail.getId())
+                    .description(detail.getDescription())
+                    .language(detail.getLanguage())
+                    .pageCount(detail.getPageCount())
+                    .publisher(detail.getPublisher())
+                    .coverImageUrl(detail.getCoverImageUrl())
+                    .edition(detail.getEdition())
+                    .build();
         }
     }
 }

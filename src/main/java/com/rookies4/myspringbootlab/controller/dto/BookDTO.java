@@ -1,7 +1,7 @@
-package com.rookies4.myspringbootlab.dto;
+package com.rookies4.myspringbootlab.controller.dto;
 
 import com.rookies4.myspringbootlab.entity.Book;
-import com.rookies4.myspringbootlab.entity.BookDetail;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
@@ -9,29 +9,36 @@ import java.time.LocalDate;
 
 public class BookDTO {
 
-    @Getter
-    @Setter
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Builder
     public static class Request {
-        @NotBlank
+        @NotBlank(message = "Book title is required")
         private String title;
 
-        @NotBlank
+        @NotBlank(message = "Author name is required")
         private String author;
 
-        @Pattern(regexp = "^[0-9]{13}$", message = "ISBN은 13자리 숫자여야 합니다.")
+        @NotBlank(message = "ISBN is required")
+        @Pattern(regexp = "^(?=(?:\\D*\\d){10}(?:(?:\\D*\\d){3})?$)[\\d-]+$",
+                message = "ISBN must be valid (10 or 13 digits, with or without hyphens)")
         private String isbn;
 
-        @PositiveOrZero
+        @PositiveOrZero(message = "Price must be positive or zero")
         private Integer price;
 
-        @PastOrPresent
+        @Past(message = "Publish date must be in the past")
         private LocalDate publishDate;
 
-        private BookDetailDTO detailRequest;
+        @Valid
+        private BookDetailDTO detail;
     }
 
-    @Getter
-    @Setter
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Builder
     public static class BookDetailDTO {
         private String description;
         private String language;
@@ -41,10 +48,9 @@ public class BookDTO {
         private String edition;
     }
 
-    @Getter
-    @Setter
-    @AllArgsConstructor
+    @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     @Builder
     public static class Response {
         private Long id;
@@ -56,6 +62,18 @@ public class BookDTO {
         private BookDetailResponse detail;
 
         public static Response fromEntity(Book book) {
+            BookDetailResponse detailResponse = book.getBookDetail() != null
+                    ? BookDetailResponse.builder()
+                    .id(book.getBookDetail().getId())
+                    .description(book.getBookDetail().getDescription())
+                    .language(book.getBookDetail().getLanguage())
+                    .pageCount(book.getBookDetail().getPageCount())
+                    .publisher(book.getBookDetail().getPublisher())
+                    .coverImageUrl(book.getBookDetail().getCoverImageUrl())
+                    .edition(book.getBookDetail().getEdition())
+                    .build()
+                    : null;
+
             return Response.builder()
                     .id(book.getId())
                     .title(book.getTitle())
@@ -63,15 +81,14 @@ public class BookDTO {
                     .isbn(book.getIsbn())
                     .price(book.getPrice())
                     .publishDate(book.getPublishDate())
-                    .detail(book.getBookDetail() != null ? BookDetailResponse.fromEntity(book.getBookDetail()) : null)
+                    .detail(detailResponse)
                     .build();
         }
     }
 
-    @Getter
-    @Setter
-    @AllArgsConstructor
+    @Data
     @NoArgsConstructor
+    @AllArgsConstructor
     @Builder
     public static class BookDetailResponse {
         private Long id;
@@ -81,17 +98,5 @@ public class BookDTO {
         private String publisher;
         private String coverImageUrl;
         private String edition;
-
-        public static BookDetailResponse fromEntity(BookDetail detail) {
-            return BookDetailResponse.builder()
-                    .id(detail.getId())
-                    .description(detail.getDescription())
-                    .language(detail.getLanguage())
-                    .pageCount(detail.getPageCount())
-                    .publisher(detail.getPublisher())
-                    .coverImageUrl(detail.getCoverImageUrl())
-                    .edition(detail.getEdition())
-                    .build();
-        }
     }
 }

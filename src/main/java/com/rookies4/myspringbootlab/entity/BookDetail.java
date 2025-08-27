@@ -1,52 +1,41 @@
 package com.rookies4.myspringbootlab.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name = "book_details")
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Getter
+@Setter
 public class BookDetail {
 
-    //PK
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "book_detail_id")
     private Long id;
 
-    //내용
-    @Column(nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String description;
 
-    //언어
-    @Column(nullable = false)
+    @Column(name = "language")
     private String language;
 
-    //페이지 수
-    @Column(nullable = false)
-    private int pageCount;
+    @Column(name = "page_count")
+    private Integer pageCount;
 
-    //출판사
-    @Column(nullable = false)
+    @Column(name = "publisher")
     private String publisher;
 
-    //표지 이미지 URL
-    @Column(nullable = false)
+    @Column(name = "cover_image_url")
     private String coverImageUrl;
 
-    //에디션
-    @Column(nullable = false)
+    @Column(name = "edition")
     private String edition;
-
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_id", unique = true)
     private Book book;
-
 }

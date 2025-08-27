@@ -83,7 +83,6 @@ public class DefaultExceptionAdvice {
         }
     }
 
-
     private boolean isApiRequest(WebRequest request) {
         // 요청 경로가 /api/로 시작하는지 확인
         String path = request.getDescription(false);

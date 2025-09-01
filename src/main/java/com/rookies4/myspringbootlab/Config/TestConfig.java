@@ -1,19 +1,18 @@
-package com.rookies4.myspringbootlab.Config;
-
+package com.rookies4.myspringbootlab.config;
 
 import com.rookies4.myspringbootlab.Config.vo.MyEnvironment;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile("test")
 @Configuration
+@Profile("test")
 public class TestConfig {
     @Bean
-    public MyEnvironment myEnvironment(){
-        return MyEnvironment.builder()
-                .mode("개발환경")
-                .build();
-    }
+    public MyEnvironment myEnvironment() {
+        return MyEnvironment.builder() //MyEnvironmentBuilder
+                .mode("테스트환경")
+                .build(); //MyEnvironment
 
+    }
 }

@@ -1,7 +1,9 @@
 package com.rookies4.myspringbootlab.exception;
 
+import com.rookies4.myspringbootlab.exception.ErrorCode;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
+
 @Getter
 public class BusinessException extends RuntimeException {
     private static final long serialVersionUID = 1L;

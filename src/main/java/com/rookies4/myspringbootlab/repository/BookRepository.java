@@ -29,4 +29,13 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     Optional<Book> findByIsbnWithBookDetail(@Param("isbn") String isbn);
 
     boolean existsByIsbn(String isbn);
+
+    //PUblihser 관련 새로 추가 메서드
+    List<Book> findByPublisherId(Long publisherId);
+
+    Long countByPublisherId(@Param("publisherId") Long publisherId);
+
+    Optional<Book> findByIdWithAllDetails(@Param("id") Long id);
+
+
 }

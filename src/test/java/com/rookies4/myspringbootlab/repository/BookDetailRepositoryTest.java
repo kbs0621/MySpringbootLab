@@ -3,7 +3,6 @@ package com.rookies4.myspringbootlab.repository;
 import com.rookies4.myspringbootlab.entity.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 @Transactional
 //@DataJpaTest
-public class BookRepositoryTest {
+public class BookDetailRepositoryTest {
 
     @Autowired
     private BookRepository bookRepository;

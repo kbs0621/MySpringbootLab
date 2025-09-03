@@ -62,6 +62,10 @@ public class BookDTO {
         private BookDetailResponse detail;
 
         public static Response fromEntity(Book book) {
+            PublisherDTO.SimpleResponse departmentResponse = book.getPublisher() != null
+                    ? PublisherDTO.SimpleResponse.fromEntity(book.getPublisher())
+                    : null;
+
             BookDetailResponse detailResponse = book.getBookDetail() != null
                     ? BookDetailResponse.builder()
                     .id(book.getBookDetail().getId())
@@ -85,6 +89,29 @@ public class BookDTO {
                     .build();
         }
     }
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    @Builder
+    public static class SimpleResponse {
+        private Long id;
+        private String title;
+        private String author;
+        private String isbn;
+        private Integer price;
+        private LocalDate publishDate;
+
+        public static SimpleResponse fromEntity(Book book) {
+            return SimpleResponse.builder()
+                    .id(book.getId())
+                    .title(book.getTitle())
+                    .author(book.getAuthor())
+                    .isbn(book.getIsbn())
+                    .price(book.getPrice())
+                    .publishDate(book.getPublishDate())
+                    .build();
+        }
+    }
 
     @Data
     @NoArgsConstructor
@@ -99,4 +126,5 @@ public class BookDTO {
         private String coverImageUrl;
         private String edition;
     }
+
 }

@@ -36,4 +36,10 @@ public class Book {
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY)
     private BookDetail bookDetail;
+
+    //ManyToOne
+    @ManyToOne(fetch= FetchType.LAZY)
+    @JoinColumn(name="publisher_id")
+    private Publisher publisher;
+
 }

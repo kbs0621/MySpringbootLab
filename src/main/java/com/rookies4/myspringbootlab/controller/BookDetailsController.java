@@ -9,12 +9,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/books")
 @RequiredArgsConstructor
-public class BookController {
+public class BookDetailsController {
 
     private final BookService bookService;
 
